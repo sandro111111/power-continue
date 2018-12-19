@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: 
+        local('Museo Sans Cyrl'),
+        url('../fonts/MuseosansCyrl-500.woff') format(woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src:
+        local('Museo Sans Cyrl'),
+        url('../fonts/MuseoSansCyrl-700.woff') format(woff);
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: 'Museo Sans Cyrl';
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    
+    padding-top: 80px; 
+    max-width: 1200px;
+    
+}
+
+.task {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    text-align: center;
+
+}
