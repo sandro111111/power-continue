@@ -39,17 +39,41 @@ html {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+    
     
     padding-top: 80px; 
     max-width: 1200px;
     
 }
 
+.tasks {
+    display: flex;
+    justify-content: center;
+
+    list-style-type: none; 
+
+}
+
 .task {
+    padding: 52px 50px 61px 50px;
+    margin: 0px 10px 0px 10px;
+    
     background-color: #f7f7f7;
     border-radius: 8px;
     text-align: center;
 
 }
+
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.link {
+    display: inline-block;
+    color: #0a96d1;
+    border-bottom: 1px dashed #0a96d1;
+    text-decoration: none;
+}
+
+
