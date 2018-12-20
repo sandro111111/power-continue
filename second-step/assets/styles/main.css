@@ -2,7 +2,8 @@
     font-family: 'Museo Sans Cyrl';
     src: 
         local('Museo Sans Cyrl'),
-        url('../fonts/MuseosansCyrl-500.woff') format(woff);
+        url('../fonts/MuseosansCyrl500.woff2') format('woff2'),
+        url('../fonts/MuseosansCyrl500.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +12,7 @@
     font-family: 'Museo Sans Cyrl';
     src:
         local('Museo Sans Cyrl'),
-        url('../fonts/MuseoSansCyrl-700.woff') format(woff);
+        url('../fonts/MuseoSansCyrl-700.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -31,8 +32,8 @@ html {
     box-sizing: inherit;
 }
 
-.body {
-    font-family: 'Museo Sans Cyrl';
+body {
+    font-family: 'Museo Sans Cyrl', sans-serif;
     font-size: 15px;
     color: #333333;
     line-height: 1.5;
