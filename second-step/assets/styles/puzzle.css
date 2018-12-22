@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: 
+        local('Museo Sans Cyrl'),
+        url('../fonts/MuseosansCyrl500.woff2') format('woff2'),
+        url('../fonts/MuseosansCyrl500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src:
+        local('Museo Sans Cyrl'),
+        url('../fonts/MuseoSansCyrl-700.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.container {
+    margin: auto;
+    
+    padding-top: 80px; 
+    max-width: 1200px;
+    
+}
+
+.tasks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none; 
+
+}
+
+.task {
+    padding: 52px 50px 61px 50px;
+    margin: 15px 15px 15px 15px;
+    
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+h2 {
+    padding-top: 8px;
+    padding-bottom: 10px;
+
+    font-weight: bold;
+    font-size: 24px;    
+}
+
+.link {
+    display: inline-block;
+    padding-top: 7px; 
+    border-bottom: 1px dashed #0a96d1;
+    
+    color: #0a96d1;
+    text-decoration: none;
+}
+
+.link:hover {
+    border-bottom: none;
+}
+
+.video {
+    width: 66px;
+    height: 34px;
+
+    background-image: url('../images/video.svg');
+    background-repeat: no-repeat;
+
+}
+
+.headphones {
+    width: 55px;
+    height: 46px;
+
+    background-image: url('../images/headphones.svg');
+    background-repeat: no-repeat;
+}
+
+.checklist {
+    width: 43px;
+    height: 45px;
+
+    background-image: url('../images/checklist.svg');
+    background-repeat: no-repeat;
+}
+
+.pen {
+    width: 32px;
+    height: 44px;
+
+    background-image: url('../images/pen.svg');
+    background-repeat: no-repeat;
+}
+
+.cycle {
+    width: 43px;
+    height: 45px;
+
+    background-image: url('../images/cycle.svg');
+    background-repeat: no-repeat;
+
+    margin: auto;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;  
+}
+
+.tasks-item {
+    width: calc(100% / 3);
+}
