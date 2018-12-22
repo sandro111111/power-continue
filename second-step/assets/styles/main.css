@@ -36,8 +36,9 @@ html {
     font-variant: small-caps;
 
     border-radius: 50%;
-}
 
+    transition: transform .3s ease-out;
+}
 
 .menu-item:first-child {
     width: 100px;
@@ -52,6 +53,10 @@ html {
     height: 150px;
 
     background-color: lightcoral;
+}
+
+.menu-item:nth-child(1) a::before {
+    background-color: palevioletred;
 }
 
 .menu-item:nth-child(2) a::before {
