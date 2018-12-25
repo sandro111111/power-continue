@@ -1,0 +1,67 @@
+.container {
+    margin: auto;
+    max-width: 1440px;
+    width: 92vw;
+    padding-bottom: 55px; 
+}
+
+.body {
+    color: #333333;
+    background: #f6f3f2;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 21px;
+    line-height: 1.5;
+}    
+
+a {
+    text-decoration: none;
+}
+
+.time {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    color: #666666;
+    text-transform: capitalize;
+}
+
+.title {
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.17;
+}
+
+.title:hover,
+.explore-link:hover {
+    color: #d33a2c;
+}
+
+.card-cat .title {
+    font-size: 45px;
+}
+
+.title-link {
+    color: #111111;
+}
+
+.author {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: #666666;
+}
+
+.more-link {
+    font-size: 30px;
+    color: #2da2c5;
+}
+
+.explore-link {
+    font-size: 20px;
+    color: #3775b6;
+}
+
+small {
+    font-size: 16px;
+}
+
