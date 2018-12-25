@@ -35,6 +35,7 @@ a {
 .title:hover,
 .explore-link:hover {
     color: #d33a2c;
+    transition: color 1s ease-out
 }
 
 .card-cat .title {
@@ -65,3 +66,46 @@ small {
     font-size: 16px;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 33%;
+    padding: 0px 1em 150px 1em;
+    margin-bottom: 25px;
+}
+
+.card:not(.card-cat):hover {
+    transform: scale(1.02);
+}
+
+.card-cat {
+    flex-grow: 1;
+    border-radius: 11px;
+}
+
+.content {
+    margin-bottom: 35px;
+}
+
+.card::before {
+    position: absolute;
+    left: -30px;
+    top: -30px;
+
+    display: block;
+    width: calc(100% + 60%);
+    height: 100%;
+
+    transition: background-color .1s ease-out;
+    background-color: transparent;
+
+    content: '';
+}
+
+.card::before:hover {
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+}
