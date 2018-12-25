@@ -5,7 +5,7 @@
     padding-bottom: 55px; 
 }
 
-.body {
+body {
     color: #333333;
     background: #f6f3f2;
 
@@ -53,8 +53,20 @@ a {
 }
 
 .more-link {
+    position: absolute;
+    left: -30px;
+    bottom: 30px;
+
+    display: block;
+    width: 120px;
+    height: 120px;
+
     font-size: 30px;
+    text-align: center;
+    line-height: 120px;
     color: #2da2c5;
+
+    transition: all .2s ease-out;
 }
 
 .explore-link {
@@ -98,7 +110,7 @@ small {
     top: -30px;
 
     display: block;
-    width: calc(100% + 60%);
+    width: calc(100% + 60px);
     height: 100%;
 
     transition: background-color .1s ease-out;
@@ -107,7 +119,7 @@ small {
     content: '';
 }
 
-.card::before:hover {
+.card:not(.card-cat):hover::before {
     background-color: #fff;
     box-shadow: 0 0 40px rgba(0, 0, 0, .15);
     transition: all .2s ease-out;
