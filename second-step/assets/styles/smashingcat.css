@@ -38,9 +38,16 @@ a {
     transition: color 1s ease-out
 }
 
-.card-cat .title {
+.card-cat .title a {
     font-size: 45px;
+    color: #f6f3f2;
     
+}
+
+.card-cat .content {
+    color: white;
+  
+    padding-top: 30px;
 }
 
 .title-link {
@@ -53,7 +60,7 @@ a {
     background-image: linear-gradient(#2da2c5, #2da2c5);
     background-repeat: no-repeat;
     background-size: 100% 1.5px;
-    background-position-y: 92%;
+    background-position-y: 96%;
 
     transition: color .1s ease-out;
 }
@@ -81,13 +88,33 @@ a {
     transition: all .2s ease-out;
 }
 
+.card:hover .more-link {
+    color: #fff;
+    background: #2da2c5;
+}
+
 .explore-link {
+    display: block;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 12px; 
+
+    height: 60px;
+    width: 250px;
+    
+    background: white;
     font-size: 20px;
+    font-weight: bold;
     color: #3775b6;
 }
 
 small {
+    display: block;
+    margin-top: 15px;
+
     font-size: 16px;
+    color: white;
 }
 
 .cards {
@@ -110,8 +137,11 @@ small {
 .card-cat {
     flex-grow: 1;
     border-radius: 11px;
-    padding-bottom: 75px;
+    padding: 10px 140px 50px 140px;
+    background: #d33a2c;
+    text-align: center;
 }
+
 
 .content {
     margin-bottom: 35px;
@@ -141,4 +171,46 @@ small {
 .post {
     position: relative;
     z-index: 10;
+}
+
+.pseudo-header {
+    position: relative;
+    z-index: 20;
+
+    height: 60px;
+    margin-bottom: 40px;
+
+    background: #b13125;
+}
+
+.page-title {
+    display: block;
+    max-width: 280px;
+    margin: 0;
+
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #222;
+    letter-spacing: 4px;
+    line-height: 1;
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transform-origin: left center;
+    transform: rotateZ(90deg) translateX(-72px) translateY(1em);
+
+}
+
+.page-title span {
+    position: relative;
+    top: .1em;
+
+    display: inline-block;
+    padding: 0 .6em;
+
+    background-color: #f6f3f2;
 }
