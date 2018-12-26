@@ -22,7 +22,7 @@ a {
     font-family: 'Times New Roman', Times, serif;
     font-size: 13px;
     color: #666666;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .title {
@@ -40,10 +40,22 @@ a {
 
 .card-cat .title {
     font-size: 45px;
+    
 }
 
 .title-link {
     color: #111111;
+    text-shadow:
+        3px 0 #f6f3f2, 2px 0 #f6f3f2,
+        1px 0 #f6f3f2, -1px 0 #f6f3f2,
+        -2px 0 #f6f3f2, -3px 0 #f6f3f2;
+
+    background-image: linear-gradient(#2da2c5, #2da2c5);
+    background-repeat: no-repeat;
+    background-size: 100% 1.5px;
+    background-position-y: 92%;
+
+    transition: color .1s ease-out;
 }
 
 .author {
@@ -85,19 +97,20 @@ small {
 
 .card {
     position: relative;
-    width: 33%;
+    width: calc(100% / 3);
     padding: 0px 1em 150px 1em;
     margin-bottom: 25px;
-    z-index: 20;
 }
 
 .card:not(.card-cat):hover {
     transform: scale(1.02);
+    z-index: 20;
 }
 
 .card-cat {
     flex-grow: 1;
     border-radius: 11px;
+    padding-bottom: 75px;
 }
 
 .content {
