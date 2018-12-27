@@ -94,14 +94,14 @@ a {
 }
 
 .explore-link {
-    display: block;
+    display: inline-block;
     border: 1px solid white;
     border-radius: 10px;
     margin: auto;
-    padding-top: 12px; 
+    padding: 12px;
 
-    height: 60px;
-    width: 250px;
+    
+    min-width: 100px;
     
     background: white;
     font-size: 20px;
