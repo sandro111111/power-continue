@@ -32,10 +32,10 @@ a {
     line-height: 1.17;
 }
 
-.title:hover,
+ .title-link:hover,
 .explore-link:hover {
     color: #d33a2c;
-    transition: color 1s ease-out
+    transition: color .3s ease-out
 }
 
 .card-cat .title a {
