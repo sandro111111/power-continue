@@ -147,7 +147,7 @@ small {
     margin-bottom: 35px;
 }
 
-.card::before {
+.card:not(.card-cat)::before {
     position: absolute;
     left: -30px;
     top: -30px;
